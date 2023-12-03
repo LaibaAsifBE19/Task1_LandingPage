@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, #dd9df1 70%, #FFCEFE 30%);
+    position: relative;
+    overflow: hidden;
+}
+
+.container .cont-box{
+height: 75%;
+width: 85%;
+padding: 30px 30px;
+background: rgba(255, 255, 255, 0.1);
+z-index: 100;
+display:flex;
+position: relative;
+border-radius: 20px;
+border: 2px solid rgba(255, 255, 255, 0.2);
+backdrop-filter: blur(5px);
+box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.25);
+transform: translate(5%, 8%);
+}
+
+ .cont-box nav {
+    height: 1%;
+    width: 50%;
+    position: absolute;
+    margin: 1px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+}
+
+ .cont-box nav ul {
+    display:flex;
+    list-style-type: none;  
+}
+
+ .cont-box nav ul li{
+    display: inline-block;
+    padding: 0 10px;
+    margin:0 5px;
+}
+
+ .cont-box nav ul a{
+    text-decoration: none;
+    padding: 0.3rem 0.1rem;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #62415d;
+    position: relative;
+    z-index: 1;
+}
+
+ .cont-box nav ul a::after{
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0px;
+    border-radius: 20px;
+    background-color: #FFCEFE;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+ .cont-box nav ul a:hover:after{
+    width: 100%;
+}
+
+.main-content {
+    width: 60%;
+    padding-top: 100px;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.image-icecream ,.main-text{
+    flex-basis: 50%;
+}
+
+.main-text p{
+    width: 400px;
+}
+
+.image-icecream img{
+    width: 450px;
+    height: 450px;
+    padding-left: 50px;
+}
+
+.main-content h1 {
+    font-size: 80px;
+    letter-spacing: 2px;
+    line-height: 100px;
+    color: #62415d;
+    font-family: 'Dancing Script', cursive;
+    padding-inline-start: .5rem;
+}
+
+.main-content p{
+    margin-top: 10px;
+    font-size: 13px;
+    letter-spacing: .5px;
+    padding-inline-start: .5rem;
+    width: 20rem;
+}
+
+.main-content button{
+    color: var(--white);
+    margin-top: 1rem;
+    margin-left: .5rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #62415d;
+    color: #FFCEFE;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.right{
+    position: absolute;
+    right: 5%;
+    bottom: 20%;
+}
+.box{
+    display: flex;
+    align-items: center;   
+}
+
+.right .box .image img{
+    width: 70%; 
+}
+
+.image{
+    margin-top: 2rem;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: -5px 5px 17px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.image:hover{
+    background-color: rgba(98,65,93,0.7);
+}
+
+.box .inner-box{
+    margin: 1.5rem 0 0 1rem;
+}
+
+.box .inner-box h3{
+    color: #62415d;
+    font-size: 14px;
+    font-weight: 900;
+    width: 200px;
+}
+
+.social-links{
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+
+.social-links::before{
+    content: "";
+    width: 80%;
+    height: 3px;
+    position: absolute;
+    top:50%;
+    left: -150px;
+    background-color: #62415d;
+    
+}
+
+.social-links i{
+    margin-left: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 30%;
+    background-color: #704f7b;
+    color: #FFCEFE;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.social-links i:hover{
+    transform: translateY(-10px);
+}
